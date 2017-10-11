@@ -5,17 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.github.vasiliz.wheelrockets.userAuth.view.LoginActivity">
+    tools:context="com.github.vasiliz.rocketswheel.userAuth.view.LoginActivity"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <TextView
+        <EditText
+            android:text="User"
             android:id="@+id/set_login_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content">
+        </EditText>
 
         <Button
             android:onClick="onLoginButtonClicked"
@@ -23,6 +22,5 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LogIn"/>
-    </LinearLayout>
 
 </LinearLayout>
