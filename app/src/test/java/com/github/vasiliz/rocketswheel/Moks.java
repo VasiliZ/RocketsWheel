@@ -12,6 +12,8 @@ public class Moks {
         URL stream = Moks.class.getClassLoader().getResource(pName);
         Assert.assertNotNull("resource not found, maybe you forget add .json?", stream);
         return stream;
+
+        //dontWork
     }
 
 
