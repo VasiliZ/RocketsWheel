@@ -9,16 +9,13 @@ import com.github.vasiliz.rocketswheel.userAuth.view.LoginActivity;
 import org.junit.Test;
 
 import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.action.ViewActions.clearText;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
-import static android.support.test.espresso.matcher.ViewMatchers.hasErrorText;
 import static android.support.test.espresso.matcher.ViewMatchers.isClickable;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.isEnabled;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
-import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
 public class LoginActivityTest {
 
@@ -28,12 +25,12 @@ public class LoginActivityTest {
     public void testLoginActivity() {
         mActivityTestRule.launchActivity(new Intent());
 
-        ViewInteraction checkButton = onView(withId(R.id.send_auth_data));
+        final ViewInteraction checkButton = onView(withId(R.id.send_auth_data));
         checkButton.check(matches(isDisplayed()));
         checkButton.check(matches(isClickable()));
         checkButton.perform(click());
 
-        ViewInteraction checkTextEdit = onView(withId(R.id.set_login_view));
+        final ViewInteraction checkTextEdit = onView(withId(R.id.set_login_view));
         checkTextEdit.check(matches(isEnabled()));
         checkTextEdit.check(matches(isDisplayed()));
         checkTextEdit.perform(typeText("user name"));

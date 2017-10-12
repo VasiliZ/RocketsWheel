@@ -1,4 +1,4 @@
-package com.github.vasiliz.rocketswheel.authServise;
+package com.github.vasiliz.rocketswheel.services.authServise;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -24,6 +24,7 @@ public class AuthService {
             protected Object doInBackground(Object[] pObjects) {
                 try {
                     Thread.sleep(2000);
+
 
                 } catch (InterruptedException pE) {
                     pE.printStackTrace();

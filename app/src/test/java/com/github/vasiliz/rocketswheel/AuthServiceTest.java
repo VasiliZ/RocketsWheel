@@ -2,8 +2,8 @@ package com.github.vasiliz.rocketswheel;
 
 import android.content.Context;
 
-import com.github.vasiliz.rocketswheel.authServise.AuthService;
-import com.github.vasiliz.rocketswheel.authServise.AuthUserCallback;
+import com.github.vasiliz.rocketswheel.services.authServise.AuthService;
+import com.github.vasiliz.rocketswheel.services.authServise.AuthUserCallback;
 
 import org.junit.Before;
 import org.junit.Test;

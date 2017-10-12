@@ -2,7 +2,7 @@ package com.github.vasiliz.rocketswheel.userAuth.presenter;
 
 import android.support.annotation.NonNull;
 
-import com.github.vasiliz.rocketswheel.authServise.AuthUserCallback;
+import com.github.vasiliz.rocketswheel.services.authServise.AuthUserCallback;
 import com.github.vasiliz.rocketswheel.userAuth.model.AuthModel;
 import com.github.vasiliz.rocketswheel.userAuth.view.UserAuthView;
 import com.github.vasiliz.rokets.RocketPresenter;

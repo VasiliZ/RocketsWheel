@@ -1,4 +1,4 @@
-package com.github.vasiliz.rocketswheel.authServise;
+package com.github.vasiliz.rocketswheel.services.authServise;
 
 import android.support.annotation.NonNull;
 
